@@ -1,9 +1,5 @@
 # Section
 
-Table of contents
-<br>\=================
-
-
 ## Ressources 
 
 [Video](https://www.youtube.com/watch?v=MEO1kAawOXQ) <br>
