@@ -2,6 +2,12 @@
 
 Table of contents
 <br>\=================
+- [Functions](#functions)
+- [Variable and Scope](#variable-and-scope)
+- [Debugging (“Step through”)](#debugging-step-through)
+- [Duplicate of 'Debugging (“Step into”)'](#duplicate-of-debugging-step-into)
+- [Arrays](#arrays)
+- [Command Line Arguments](#command-line-arguments)
 
 # Functions
 [Video](https://youtu.be/n1glFqt3g38)
