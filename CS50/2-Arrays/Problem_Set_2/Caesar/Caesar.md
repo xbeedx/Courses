@@ -1,0 +1,24 @@
+# Caesar
+For this problem, you’ll implement a program that encrypts messages using Caesar’s cipher, per the below.
+
+```
+$ ./caesar 13
+plaintext:  HELLO
+ciphertext: URYYB
+```
+
+## Background
+
+Supposedly, Caesar (yes, that Caesar) used to “encrypt” (i.e., conceal in a reversible way) confidential messages by shifting each letter therein by some number of places. For instance, he might write A as B, B as C, C as D, …, and, wrapping around alphabetically, Z as A. And so, to say HELLO to someone, Caesar might write IFMMP instead. Upon receiving such messages from Caesar, recipients would have to “decrypt” them by shifting letters in the opposite direction by the same number of places.
+
+The secrecy of this “cryptosystem” relied on only Caesar and the recipients knowing a secret, the number of places by which Caesar had shifted his letters (e.g., 1). Not particularly secure by modern standards, but, hey, if you’re perhaps the first in the world to do it, pretty secure!
+
+Unencrypted text is generally called plaintext. Encrypted text is generally called ciphertext. And the secret used is called a key.
+
+To be clear, then, here’s how encrypting HELLO with a key of 1 yields IFMMP:
+
+<table class="table table-bordered table-striped">
+  <thead><tr><th style="" data-field="0"><div class="th-inner "><div style="text-align: left">plaintext</div></div><div class="fht-cell"></div></th><th style="" data-field="1"><div class="th-inner "><div style="text-align: left"><code class="language-plaintext highlighter-rouge">H</code></div></div><div class="fht-cell"></div></th><th style="" data-field="2"><div class="th-inner "><div style="text-align: left"><code class="language-plaintext highlighter-rouge">E</code></div></div><div class="fht-cell"></div></th><th style="" data-field="3"><div class="th-inner "><div style="text-align: left"><code class="language-plaintext highlighter-rouge">L</code></div></div><div class="fht-cell"></div></th><th style="" data-field="4"><div class="th-inner "><div style="text-align: left"><code class="language-plaintext highlighter-rouge">L</code></div></div><div class="fht-cell"></div></th><th style="" data-field="5"><div class="th-inner "><div style="text-align: left"><code class="language-plaintext highlighter-rouge">O</code></div></div><div class="fht-cell"></div></th></tr></thead>
+  <tbody><tr data-index="0"><td>+ key</td><td><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="1" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></mjx-assistive-mml></mjx-container></td><td><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="2" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></mjx-assistive-mml></mjx-container></td><td><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="3" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></mjx-assistive-mml></mjx-container></td><td><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="4" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></mjx-assistive-mml></mjx-container></td><td><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="5" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></mjx-assistive-mml></mjx-container></td></tr><tr data-index="1"><td>= ciphertext</td><td><code class="language-plaintext highlighter-rouge">I</code></td><td><code class="language-plaintext highlighter-rouge">F</code></td><td><code class="language-plaintext highlighter-rouge">M</code></td><td><code class="language-plaintext highlighter-rouge">M</code></td><td><code class="language-plaintext highlighter-rouge">P</code></td></tr></tbody>
+</table>
+
