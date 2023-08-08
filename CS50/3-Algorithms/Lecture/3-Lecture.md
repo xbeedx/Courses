@@ -2,6 +2,13 @@
 
 Table of contents
 <br>\=================
+- [Algorithms](#algorithms)
+- [Running Time](#running-time)
+- [Linear and Binary Search](#linear-and-binary-search)
+- [Data Structures](#data-structures)
+- [Sorting](#sorting)
+- [Recursion](#recursion)
+- [Merge Sort](#merge-sort)
 
 
 ## Ressources 
