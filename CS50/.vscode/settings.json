@@ -1,9 +1,0 @@
-{
-    "debug.allowBreakpointsEverywhere": true,
-    "files.associations": {
-        "__tuple": "c",
-        "array": "c",
-        "cs50.h": "c"
-    },
-    "C_Cpp.errorSquiggles": "disabled"
-}
