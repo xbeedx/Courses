@@ -72,8 +72,8 @@ Else if 50 < doors[middle]
     Search doors[0] through doors[middle-1]
 Else if 50 > doors[middle]
     Search doors[middle+1] through doors[n-1]
-Notice, looking at this approximation of code, you can nearly imagine what this might look like in actual code.
 ```
+<sub>Notice, looking at this approximation of code, you can nearly imagine what this might look like in actual code.<sub>
 
 # Running Time
 
