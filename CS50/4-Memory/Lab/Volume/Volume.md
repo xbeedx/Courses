@@ -59,5 +59,3 @@ You can then use &buffer as an argument to fread or fwrite to read into or write
 
 
 ## [Result](https://submit.cs50.io/check50/a41e3f2e03f8017b2ba330f2d6952cb06ec88f7a)
-
-![output](./volume/output.wav)
