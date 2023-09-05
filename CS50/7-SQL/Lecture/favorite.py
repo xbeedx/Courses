@@ -5,11 +5,11 @@ with open("favorites.csv","r") as file:
     counts = {}
     scratch, c, python = 0, 0, 0
     for row in reader:
-        favorite = row["language"]
+        favorite = row["problem"]
         if favorite in counts:
             counts[favorite] += 1
         else:
             counts[favorite] = 1
 
-for language in counts:
+for language in sorted(counts, key=lambda problem: counts[problem], reverse=True):
     print(f"{language}: {counts[language]}")
