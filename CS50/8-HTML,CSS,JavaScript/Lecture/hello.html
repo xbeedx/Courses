@@ -7,6 +7,16 @@
         </title>
     </head>
     <body>
-        hello, body
+        <script>
+            function greet() {
+                let name = document.querySelector('#name').value;
+                alert('Hello, ' + name);
+                return false; 
+            }
+        </script>
+        <form onsubmit="return greet();">
+            <input  id="name" autocomplete="off" placeholder="Name" autofocus>
+            <button type="submit">Greet</button>
+        </form>
     </body>
 </html>
