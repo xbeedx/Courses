@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the distance between the earth and the sun?</h3>
+                <p id="resultI"></p>
+                <button>1496 Million Km</button>
+                <button>149 Million Km</button>
+                <button>14 Million Km</button>
+                <button>1.4 Million Km</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>How long was the 100 year war ?</h3>
+                <p id="resultII"></p>
+                <input type="text" name="answer" id="answer"> 
+                <button id="buttonII">Check Answer</button>
+            </div>
+        </div>
+
+        <script>
+            // TODO: Add code to check answers to questions
+
+            const buttons = document.querySelectorAll('button:not(#buttonII)');
+            const resultI = document.querySelector('#resultI');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                     if (this.innerHTML === "149 Million Km") {
+                        resultI.innerHTML = "Correct";
+                        this.style.backgroundColor = 'green'
+                       buttons.forEach(button => { button.disabled = true;})
+                    } else {
+                        resultI.innerHTML = "Incorrect";
+                        this.style.backgroundColor = 'red'
+                    }
+                });
+            });
+
+            const resultII = document.querySelector('#resultII');
+            const answer = document.querySelector('#answer');
+            document.querySelector('#buttonII').addEventListener('click', function() {
+                if (answer.value === "116") {
+                    resultII.innerHTML = "Correct";
+                    answer.style.backgroundColor = 'green'
+                } else {
+                    resultII.innerHTML = "Incorrect";
+                    answer.style.backgroundColor = 'red'
+                }
+            });
+
+        </script>
+    </body>
+</html>
