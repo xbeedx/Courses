@@ -118,7 +118,7 @@ Table of contents
 
 - The browser will read your HTML file top to bottom and left to right.
 - Because whitespace is effectively ignored in HTML, you will need to use <p> paragraph tags to open and close a paragraph. Consider the following:
-```
+```html
 <!DOCTYPE html>
 
 <!-- Demonstrates paragraphs -->
