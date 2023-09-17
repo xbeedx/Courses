@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+      .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+        }
+
+      .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./radioshack-logo.png" alt="radioshack logo" style="width: 12rem;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" style="text-align: center;" href="#">Store <br> Locator</a>
+            <a class="nav-link active" style="text-align: center;" href="#">Steve's <br> Workbench</a>
+            <a class="nav-link active" style="text-align: center;" href="#">RadioShack <br> Services</a>
+            <a class="nav-link active" style="text-align: center;" href="#">Electronic <br> Repair</a>
+            <a class="nav-link active" style="text-align: center;" href="#">About <br> RadioShack</a>
+            <a class="nav-link active" style="text-align: center;" href="#">Product <br> Support</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br>
+
+    <div class="container" style="margin-left: 10px;">
+      <div class="row" style="width: 100%;">
+        <div class="col-md-4" >
+          <div class="row" style="font-size: small;">
+            <h6 style="margin-left: -10px;"> <a href="#">Rock and Roll OnTour</a></h6>
+            Rock and Roll Hall of Fame <br>
+            and Museum OnTour Exhibit
+          </div> <br>
+          <div class="row" style="font-size: small;">
+          <h6 style="margin-left: -10px;"><a href="#">Against Crime</a></h6>
+            Free videos, brochures and a <br>
+            quarterly teleconference <br>
+            focusing on Crime Prevention.
+          </div> <br>
+          <div class="row" style="font-size: small">
+            <h6 style="margin-left: -10px;"><a href="#">Home Security</a></h6>
+            How to protect your family <br>
+            and property from burglars <br>
+            and intruders.
+          </div> <br>
+          <div class="row" style="font-size: small">
+            <h6 style="margin-left: -10px;"><a href="#">TV/FM Reception</a></h6>
+            Answers to your <br>
+            Direct-to-Home, Outdoor and <br>
+            Indoor Reception questions.
+          </div> <br>
+          <div class="row" style="font-size: small">
+            <h6 style="margin-left: -10px;"><a href="#">Franchise Opportunities</a></h6>
+          </div> <br>
+          <div class="row" style="font-size: small">
+            <h6 style="margin-left: -10px;"><a href="#">Career Opportunities</a></h6>
+          </div> <br>
+        </div>
+        <div class="col-md-6">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <img src="./sun.jpeg" alt="sun">
+                      <h6 style=" text-align: center;"><b>on clearance items, one-of-a-kind and demo models.</b></h6>
+                      <sub style="text-align: center;"><i>Shop early for best selection!</i></sub>
+                    </div>
+                    <div class="col">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            <img src="./1_dots.gif" alt="sun">
+                          </div>
+                          <div class="col">
+                            <img src="./75.gif" alt="sun">
+                          </div>
+                          <div class="col">
+                            <img src="./2_dots.gif" alt="sun">
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  </div> <br>
+                  <div class="row">
+                    <p style="font-size: 10pt;">
+                      <b>GOOD THROUGH 7/26/97 • VISIT YOUR LOCAL RADIOSHACK!</b> <br>
+                      IMPORTANT NOTE: In a nationwide event like this, selection will vary greatly by store, so visit every participating <a href="#">RadioShack</a> in your area! Sorry, no rain checks or phone orders. All items subject to prior sale. Sale prices good through 7/26/97.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <img src="./new_Sizz.gif" alt="sun">
+                      <h6 style="text-align: center;">
+                        <b>In addition to <br>
+                        Sidewalk Sale items, <br>
+                        <a href="#" style="color: red;">  you’ll find more savings here!</a>
+                        <br>
+                        <sub> Plus, all RadioShack-Brand Phones
+                          and Answerers are on sale!</sub>
+                       </b>
+                      </h6>
+                    </div>
+                    <div class="col">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            <img src="./img_40f7b7a4.gif" alt="img_40f7b7a4">
+                          </div>
+                          <div class="col">
+                            <img src="./cellular.gif" alt="cellular">
+                          </div>
+                          <div class="col">
+                            <img src="./computer.gif" alt="computer">
+                          </div>
+                          <div class="col">
+                            <img src="./family_radio.gif" alt="family_radio">
+                          </div>
+                          <div class="col">
+                            <img src="./dth_sat.gif" alt="dth_sat">
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <p style="font-size: small;">
+                      * Save 10% to 75% (or more) on the electronic equipment and accessories you’ve always wanted! Shop NOW for gift-giving throughout the year.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer style="position: absolute; bottom: 0; width: 100%; height: 5.2rem; ">
+      <div class="container">
+        <div class="row">
+          <div class="col" style="font-size: small">
+            <a href="#">Store Locator</a>
+          </div> <br>
+          <div class="col" style="font-size: small">
+            <a href="#">Steve’s Workbench</a>
+          </div> <br>
+          <div class="col" style="font-size: small">
+            <a href="#">RadioShack Services</a>
+          </div> <br>
+          <div class="col" style="font-size: small">
+            <a href="#">Electronic Repair</a>
+          </div> <br>
+          <div class="col" style="font-size: small">
+            <a href="#">About RadioShack</a>
+          </div> <br>
+          <div class="col" style="font-size: small">
+            <a href="#">Product Support</a>
+          </div> <br>
+          <div class="col" style="font-size: small">
+            <a href="#">RadioShack Contacts</a>
+          </div> <br>
+        </div> <br>
+        <div class="row" style="text-align: center;">
+          <sub>
+            Send comments or suggestions to <a href="#" style="color: red;"> RadioShack</a>
+          </sub> <br>
+          <sub style="margin-top:-10px;">
+            <a href="#" style="color: red;">Copyright © </a> Tandy Corporation 1997. All rights reserved.
+          </sub>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
