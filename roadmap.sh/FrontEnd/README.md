@@ -93,3 +93,57 @@ Visit the following resources to learn more:
 - [HTML Tutorial for Beginners: HTML Crash Course](https://www.youtube.com/watch?v=qz0aGYrrlhU)
 - [HTML Cheatsheet](https://htmlcheatsheet.com/)
 - [Scaler: HTML](https://www.scaler.com/topics/html)
+
+### Semantic HTML
+
+Semantic element clearly describes its meaning to both the browser and the developer. In HTML, semantic element are the type of elements that can be used to define different parts of a web page such as ```<form>```, ```<table>```, ```<article>```, ```<header>```, ```<footer>```, etc.
+
+Visit the following resources to learn more:
+
+- [Guide to Writing Semantic HTML](https://cs.fyi/guide/writing-semantic-html)
+- [W3Schools: Semantic HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
+- [How To Write Semantic HTML](https://hackernoon.com/how-to-write-semantic-html-dkq3ulo)
+- [HTML Best Practices – How to Build a Better HTML-Based Website](https://www.freecodecamp.org/news/html-best-practices/)
+- [Semantic HTML: What It Is and How It Improves Your Site](https://blog.hubspot.com/website/semantic-html)
+- [Semantic Markup](https://html.com/semantic-markup)
+- [Semantic HTML - web.dev](https://web.dev/learn/html/semantic-html/)
+
+### Forms and Validations
+
+Before submitting data to the server, it is important to ensure all required form controls are filled out, in the correct format. This is called client-side form validation, and helps ensure data submitted matches the requirements set forth in the various form controls.
+
+Visit the following resources to learn more:
+
+- [MDN Web Docs: Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
+- [Learn Forms by web.dev](https://web.dev/learn/forms/)
+- [W3Schools: JavaScript Form Validation](https://www.w3schools.com/js/js_validation.asp)
+
+ Accessibility
+
+Web accessibility means that websites, tools, and technologies are designed and developed in such a way that people with disabilities can use them easily.
+
+Visit the following resources to learn more:
+
+- [Developing for Web Accessibility by W3C WAI](https://www.w3.org/WAI/tips/developing/)
+- [Accessibility Tutorial](https://www.w3schools.com/accessibility/index.php)
+- [A Complete Guide To Accessible Front-End Components](https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/)
+- [Complete Playlist on Accessibility](https://youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
+- [MDN Accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
+- [Accessibility for Developers by Google](https://web.dev/accessibility)
+- [Web Accessibility by Udacity](https://www.udacity.com/course/web-accessibility--ud891)
+- [Accessibility as an Essential Part of the Inclusive Developer Experience](https://thenewstack.io/accessibility-as-an-essential-part-of-the-inclusive-developer-experience/)
+
+### Basics of SEO
+
+SEO or Search Engine Optimization is the technique used to optimize your website for better rankings on search engines such as Google, Bing etc.
+
+Visit the following resources to learn more:
+
+- [Google Search Central — SEO Docs](https://developers.google.com/search/docs)
+- [SEO Guide](https://github.com/seo/guide)
+- [8 Must-Know SEO Best Practices For Developers](https://neilpatel.com/blog/seo-developers/)
+- [SEO for Developers](https://medium.com/welldone-software/seo-for-developers-a-quick-overview-5b5b7ce34679)
+- [Complete SEO Course for Beginners](https://www.youtube.com/watch?v=xsVTqzratPs)
+- [SEO Expert Course](https://www.youtube.com/watch?v=SnxeXZpZkI0)
+- [Learning SEO](https://learningseo.io/)
+
