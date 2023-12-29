@@ -86,7 +86,7 @@ and make interactive using JavaScript.
 Visit the following resources to learn more:
 
 - [W3Schools: Learn HTML](https://www.w3schools.com/html/html_intro.asp) 
-    - [Done](../../HTML/W3C/)
+    - [Done](../../HTML/W3C/W3C.md)
 - [MDN Docs: Getting Started with HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
 - [web.dev: Learn HTML](https://web.dev/learn/html)
 - [HTML Full Course - Build a Website Tutorial](https://www.youtube.com/watch?v=pQN-pnXPaVg)
@@ -156,6 +156,7 @@ CSS or Cascading Style Sheets is the language used to style the frontend of any 
 Visit the following resources to learn more:
 
 - [W3Schools — Learn CSS](https://www.w3schools.com/css/)
+     - [Done](../../CSS/W3C/W3C.md)
 - [web.dev — Learn CSS](https://web.dev/learn/css/)
 - [freeCodeCamp — Responsive Web Design](https://www.freecodecamp.org/learn/responsive-web-design/)
 - [Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/building-your-first-web-page/)
