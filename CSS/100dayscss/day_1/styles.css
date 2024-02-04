@@ -1,0 +1,97 @@
+ /* delete the following line if no text is used */
+/* edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+ /* use only the available space inside the 400x400 frame */
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    font-family: "Courier New", "Courier", "sans-serif";
+    color:white;
+    background: linear-gradient(45deg, #443BA0, #4fc4c9);
+    text-transform: uppercase;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.number,.big,.normal {
+    text-align: center;
+}
+
+.big{
+    font-size: 82px;
+    line-height: 60px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.normal {
+    font-size: 23px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.number {
+    position: relative;
+    height: 100px;
+    width: 200px;
+}
+
+.one-one {
+    position: absolute;
+    z-index: 1;
+    left: -16px;
+    height: 40px;
+    width: 20px;
+    background: #fff;
+    border-radius: 3px;
+    transform: rotate(50deg);
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2)
+}
+
+.one-two{
+    position: absolute;
+    z-index: 2;
+    height: 100px;
+    width: 24px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2)
+}
+
+.zero-one {
+    position: absolute;
+    z-index: 0;
+    left: 17px;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 24px solid #fff;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2)
+}
+
+.zero-two {
+    position: absolute;
+    z-index: -1;
+    left: 100px;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 24px solid #fff;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2)
+}
