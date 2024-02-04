@@ -181,3 +181,29 @@ Visit the following resources to learn more:
 [Learn CSS Grid - Course](https://cssgrid.io/)
 [Learn CSS Grid for free](https://scrimba.com/learn/cssgrid)
 [Get on the Grid at Last with the CSS Grid Layout Module](https://thenewstack.io/get-grid-last-css-grid-template-markup/)
+
+### Responsive Web Design
+
+Responsive Web Designing is the technique to make your webpages look good on all screen sizes. There are certain techniques used to achieve that e.g. CSS media queries, percentage widths, min or max widths heights etc.
+
+Visit the following resources to learn more:
+
+[Responsive Web Design](https://www.w3schools.com/css/css_rwd_intro.asp)
+[Learn Responsive Design](https://web.dev/learn/design/)
+[The Beginner’s Guide to Responsive Web Design](https://kinsta.com/blog/responsive-web-design/)
+[The guide to responsive web design in 2022](https://webflow.com/blog/responsive-web-design)
+[5 simple tips to making responsive layouts the easy way](https://www.youtube.com/watch?v=VQraviuwbzU)
+[Introduction To Responsive Web Design](https://www.youtube.com/watch?v=srvUrASNj0s)
+
+## JavaScript
+
+### Learn the basics
+
+JavaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on.
+
+Visit the following resources to learn more:
+
+[W3Schools – JavaScript Tutorial](https://www.w3schools.com/js/)
+[The Modern JavaScript Tutorial](https://javascript.info/)
+[JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c?t=2)
+[Build a Netflix Landing Page Clone with HTML, CSS & JS](https://youtu.be/P7t13SGytRk?t=22)
