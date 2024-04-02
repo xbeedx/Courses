@@ -8,7 +8,7 @@
 - Numpy External link, any version that's compatible with your version of Python.
 
 
-## Linear regression
+# Introduction to regression
 
 ISLP:   
     - Introduction pages 1 to 14 
@@ -109,3 +109,60 @@ x1 = nb.linspace(0, 10, 500, endpoint=True)
 
 linspace creates an array of ordered and evenly spaced values. 
 It also allows to see predictions where there may be gaps in the data. 
+
+# Error Evaluation and Model Comparison
+
+## Error Evaluation
+
+Estimate $\hat{y}$ for $k=1$
+
+The difference between the true values and the predictions is called the residual.
+
+For each observation $(x_n,y_n)$, the absolute residual $r_i = |y_i - \hat{y_i}|$ quantify the error at each observation.
+
+In order to quantify how well a model performs, we aggregate the errors and we call that the loss or error or cost function.
+
+A common loss function for quantitative outcomes is the Mean Squared Error (MSE): 
+
+$MSE = 1/n\sum(y_i - \hat{y_i})^2$
+
+Cost usually refers to the total loss where loss refers to a single training point.
+
+The square Root of the Mean of the Squared Errors (RMSE) is also commonly used.
+
+$RMSE =  \sqrt{MSE} = \sqrt{\frac{1}{n}\sum(y_i - \hat{y_i})^2}$
+
+## Model Fitness
+
+We will use the simplest model:
+
+$\hat{y} = \bar{y} = 1/n\sum y_i$ 
+
+as the worst possible model and:
+
+$\hat{y} = y_i$
+
+as the best possible model.
+
+$R-squared = 1 - \frac{\sum{(\hat{y_i} - yi)^2},2}{\sum{(\bar{y_i} - yi)^2}}$
+
+- If our model is as good as the mean value, $\bar{y}$ then $R-squared = 0$.
+
+- If our model is perfect, then $R-squared = 1$.
+
+$R^2$ can be negative if the model is worse than the average.
+
+## KNN - Real Estate 
+
+How to handle categorical variables in KNN?
+
+A solution is to get the Hamming distance, calculating the difference between categories.
+
+## Exploratory Data Analusis
+
+What happens if your R-squared value is low, but you expected there to be a connection between the variables you're measuring? Sometimes just looking at a single number isn't enough.
+
+Using a simple straight line might not be complex enough to capture the relationship between the variables.
+
+The correlation coefficient assumes a linear relationship.
+
