@@ -18,7 +18,19 @@ Hence, $\hat f$, has the form:
 
 $\hat f(X_1, ..., X_j) = \hat \beta_0 + \hat \beta_1X_1 + ... + \hat \beta_jX_j$
 
-## Recap: Transpose of a matrix
+# Least Squares Derivation
+
+## Definition: Transpose of a Matrix
+
+Given a 3x2 matrix:
+
+$X = \begin{bmatrix} x_{11} &x _{12} \\ x_{21} & x_{22} \\ ... & ... \end{bmatrix}$
+
+The trnaspsoe of X is:
+
+$X^T = \begin{bmatrix} x_{11} & x_{21} & ... \\ x_{12} & x_{22} & ... \end{bmatrix}$
+
+In transpose, rows become columns and columns become rows.
 
 $X = \begin{bmatrix} x_{11} & x_{12} & x_{13} \\ x_{21} & x_{22} & x_{23} \\ x_{31} & x_{32} & x_{33} \end{bmatrix}$
 
@@ -26,7 +38,7 @@ $X^T = \begin{bmatrix} x_{11} & x_{21} & x_{31} \\ x_{12} & x_{22} & x_{32} \\ x
 
 Use np.transpose() or ndarray.T
 
-## Recap: Inverse of a matrix
+##  Definition: Inverse of a Matrix
 
 - When we multiply a number by its reciprocal we get 1.
 
@@ -38,17 +50,39 @@ $A * A^{-1} = I$
 
 numpy.linalg.inv() is used to calculate the inverse of a matrix. (if it exists)
 
-## Multiple Linear Regression
+# Multiple Linear Regression
 
-- The model takes a simple algebraic form: $Y = X\beta$
+The model takes a simple algebraic form: $Y = X\beta$
 
-- we will again use the MSE as our loss function, which can be expressed in vector notation as:
+we will again use the MSE as our loss function, which can be expressed in vector notation as:
 
 $$
 MSE(\beta)= \frac{1}{n} ||Y-X\beta||^2
             = \frac{1}{n} \sum_{i=1}^{n} (y_i - x_{i1}\beta_1 - x_{i2}\beta_2)^2
 $$
 
-- Minimizing the MSE using vector calculus yields: 
+Taking the derivative of the loss i.e. MSE with respect to the model parameter  gives:
+$$
+\frac{\partial L}{\partial \beta} = -2X^T(Y-X\beta)
+$$
+
+For optimization, we set the values of the partial derivative to zero, i.e.
+
+$\frac{\partial L}{\partial \beta} = 0 => -2X^T(Y-X\beta)=0$
+
+$=> X^T(Y-X\beta)=0$
+
+Optimization of the previous equation gives:
+$X^TX\beta =X^TY$
+
+Multiplying both sides with $(X^TX)^{-1}$, we get:
+
+$(X^TX)^{-1}X^TX\beta =(X^TX)^{-1}X^TY$
+
+Thus, we get:
+
+$\beta = (X^TX)^{-1}X^TY$
+
+Backtracking this equation to fit the model optimization problem, we have: 
 
 $\hat \beta = (X^TX)^{-1}X^TY = \arg \min MSE(\beta)$
