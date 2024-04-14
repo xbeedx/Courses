@@ -86,3 +86,60 @@ $\beta = (X^TX)^{-1}X^TY$
 Backtracking this equation to fit the model optimization problem, we have: 
 
 $\hat \beta = (X^TX)^{-1}X^TY = \arg \min MSE(\beta)$
+
+# Multilinear Techniques
+
+## Qualitative predictors 
+
+So far, we assumed that all variables are quantitatives. But in practice, often we have qualitative variables.
+
+## Binary Variables
+
+If the predictor takes only two values, then we can create and indicator or a dummy variable that takes only two possible numerical values. 
+
+$$
+x_i = \begin{cases} 1 & \text{if ith observation is in category A} \\ 0 & \text{if ith observation is in category B} \end{cases}
+$$
+
+we then use the variable as a predictor in the regression equation:
+
+$$
+y_i = \beta_0 + \beta_1x_1 = \begin{cases} \beta_0 + \beta_1 & \text{if ith observation is in category A} \\ \beta_0 & \text{if ith observation is in category B} \end{cases}
+$$
+
+- $\beta_0$ is the mean of the response variable for the observations in category B 
+- $\beta_0 + \beta_1$ is the mean of the response variable for the observations in category A.
+- $\beta_1$ is the difference in the means of the response variable between the two categories.
+
+## More than two levels: One Hot Encoding
+
+If the qualitative predictor has more than two levels, we can create additional dummy variables.
+
+$$
+x_{i1} = \begin{cases} 1 & \text{if ith observation is in category A} \\ 0 & \text{otherwise} \end{cases}
+$$
+$$
+x_{i2} = \begin{cases} 1 & \text{if ith observation is in category B} \\ 0 & \text{otherwise} \end{cases}
+$$
+
+We then use the variables as predictors in the regression equation:
+
+$$
+y_i = \beta_0 + \beta_1x_{i1} + \beta_2x_{i2} = \begin{cases} \beta_0 + \beta_1 & \text{if ith observation is in category A} \\ \beta_0 + \beta_2 & \text{if ith observation is in category B} \\ \beta_0 & \text{if ith observation is in category C} \end{cases}
+$$
+
+- $\beta_0$ is the mean of the response variable for the observations in category C
+- $\beta_1$ is the difference in the means of the response variable between the two categories A and C
+- $\beta_2$ is the difference in the means of the response variable between the two categories B and C
+
+# Interpreting Coefficients & Feature Importance
+
+With a KNN model it is difficult to understand exactly what the relationship is between a feature and the response. But for linear models we can begin to understand this relationship by interpreting the model parameters!
+
+Recall that these model parameters are the beta coefficients we learn when we fit our model.
+
+When we have a large number of predictors: $X_1, ..., X_p$, there will be a large number of model parameters, $\beta_0,\beta_1, ..., \beta_p$.
+
+Looking at all values of $\beta_i$ as a list of numbers is impractical, so we visualize these values in a feature importance graph.
+
+The feature importance graph above shows which predictors have the most impact on the model’s prediction. Not only does it tell use about the magnitude of their impact but the sign on the parameter also tells us the direction of the relationship. We'll see in later sections however that such a naïve approach to coefficient interpretation may not be giving us the whole story. But this is a good place to start!
