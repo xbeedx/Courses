@@ -143,3 +143,25 @@ When we have a large number of predictors: $X_1, ..., X_p$, there will be a larg
 Looking at all values of $\beta_i$ as a list of numbers is impractical, so we visualize these values in a feature importance graph.
 
 The feature importance graph above shows which predictors have the most impact on the model’s prediction. Not only does it tell use about the magnitude of their impact but the sign on the parameter also tells us the direction of the relationship. We'll see in later sections however that such a naïve approach to coefficient interpretation may not be giving us the whole story. But this is a good place to start!
+
+# Feature Scaling - Normalization and Standardization
+
+
+## Normalization
+
+Normalization, sometimes called Min-Max scaling, transforms the features to a predefined range. Typically, we normalize to between 0 and 1. This sets 0 for the lowest value in our data for that variable, sets 1 for the highest, and all other values to be a proportional float between 0 and 1. The formula for normalization is as follows:
+
+$$
+X_{norm} = \frac{X - X_{min}}{X_{max} - X_{min}}
+$$
+
+Note that we can also use sklearn's MinMaxScaler() to normalize our data.
+
+## Standardization
+
+Standardization transforms the features by subtracting the mean and dividing by the standard deviation. This sets the new mean to 0 with a standard deviation of 1.
+
+$$
+X_{std} = \frac{X - \bar{X}}{\sigma_X}
+$$
+
