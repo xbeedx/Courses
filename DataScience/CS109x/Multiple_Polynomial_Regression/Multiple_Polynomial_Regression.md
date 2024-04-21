@@ -165,3 +165,24 @@ $$
 X_{std} = \frac{X - \bar{X}}{\sigma_X}
 $$
 
+Note that we can also use sklearn's StandardScaler() to standardize our data.
+
+### Normalization vs Standardization
+
+Standardization implies a Gaussian (or Normal) distribution. It can be more helpful when the data also follows a Gaussian distribution. Most data does follow a Gaussian distribution but this is not necessarily true. Standardization is also less impacted by outliers since there is no predefined range of features.
+
+Normalization is recommended for data that already has a fixed range. Such as a survey question with values that can only be between 1 and 10. Data that does not follow a Gaussian distribution may work better with Normalization as well. Normalization is more vulnerable to outliers than standardization.
+
+However, these are just rules of thumb to provided you with some intuition. It is often fine to simply try both and figure out what works best for your data.
+
+# Multicolinearity
+
+Collinearity and multicollinearity refer to the case in which two or more predictors are correlated. As one predictor increases or decreases, the other one always follows it.
+
+One question we may have is, "how are these predictors related to one another?" This is an important to know as high multicolinearity can complicate the interpretation of our model's parameters as we'll see
+
+Pairplot is a common visualization method for exploring possible correlations between our predictors.
+
+The off-diagonal subplots contain scatter plots showing how pairs of predictors are related. On the diagonal we have histograms displaying the distribution of values in our data for each predictor
+
+One way to think about this problem is that several coefficients contain the same information. Diagnostic methods like the pairplot can help us identity multicolinearity and remove redundant predictors, giving us a more interpretable model.
