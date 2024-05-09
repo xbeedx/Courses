@@ -279,3 +279,4 @@ For linear models it’s important to interpret the parameters
 In the left-hand graph, the MSE of the model is very small. But the slope is -0.05. That means the larger the budget the less the sales, which seems unlikely.
 
 In the right-hand graph, the MSE is very small, but the intercept is -0.5, which means that for very small budget we will have negative sales, which is impossible.
+
